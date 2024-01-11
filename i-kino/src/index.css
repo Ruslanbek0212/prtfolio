@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    padding: 15px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    box-shadow: 2px 2px 2px black;
+    position: relative;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav form {
+    width: 500px;
+    position: relative;
+    display: flex;
+}
+
+nav form input {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    color: white;
+}
+
+nav form button {
+    background-color: transparent;
+    border: none;
+    color: crimson;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: crimson;
+    text-transform: capitalize;
+}
+
+nav ul svg path {
+    fill: crimson;
+}
+
+nav .searching {
+    position: relative;
+}
+
+nav .searching .searchMenu {
+    position: absolute;
+    background-color: white;
+    padding: 20px 30px;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    border-radius: 5px;
+}
+
+nav .searching .searchMenu li {
+    display: flex;
+    align-items: center;
+}
+
+nav .searching .searchMenu li .img {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+nav .searching .searchMenu li h2 {
+    font-size: 16px
+}
+
+.addproduct,
+.addAcount {
+    width: 100%;
+    padding: 50px 150px;
+}
+
+.addproduct form,
+.addAcount form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.addproduct form input,
+.addproduct form button,
+.addproduct form select,
+.addproduct form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.product {
+    width: 100%;
+    padding: 50px 150px;
+}
+
+.product .productCard {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.product h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.product .productCard .card {
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.product .productCard .card .img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product .productCard .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product .productCard .card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.product .productCard .card h4 {
+    color: gray;
+    margin-left: 20px;
+}
+
+.product .productCard .card .cardBottom {
+    padding: 10px;
+    border-top: 2px solid gray;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.product .productCard .card .cardBottom p:nth-child(even),
+.product .productCard .card .cardBottom .MuiRating-root:nth-child(even) {
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 0px 5px;
+    color: white;
+}
+
+.product .productCard .card .cardBottom svg path {
+    fill: white;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.cardInfo {
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 800px 400px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.cardInfo .left img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.titles {
+    font-size: 30px;
+}
+
+.titles span {
+    color: crimson;
+    text-transform: capitalize;
+}
+
+.cardInfo .left h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.cardInfo .left p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cardInfo .bottomCardInfo {
+    display: flex;
+    padding: 15px 0px;
+    border-top: 2px solid gray;
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.cardInfo .bottomCardInfo p {
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+.cardInfo .bottomCardInfo p span {
+    color: crimson;
+    margin-right: 10px;
+}
+
+.cardInfo .bottomCardInfo svg path {
+    fill: white;
+}
+
+.cardInfo .right {
+    background-color: rgb(232, 232, 232);
+}
+
+.cardInfo .right .phone {
+    border-bottom: 2px solid black;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.cardInfo .right .phone .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+    margin-top: 50px;
+}
+
+.topContent button {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px 5px;
+}
+
+.addAcount form input,
+.addAcount form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+}
+.addAcount h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.addAcount form p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.addAcount form button{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.account{
+    margin-top: 300px;
+}

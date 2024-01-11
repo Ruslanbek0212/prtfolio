@@ -1,0 +1,43 @@
+{
+  "films": [
+    {
+      "name": "shum bola 2",
+      "author": "tohir malik",
+      "lang": "uz",
+      "categorys": "Komedya",
+      "country": "China",
+      "desc": "the best of the films",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/732.jpg",
+      "date": "09/11/2023",
+      "rating": 4,
+      "id": 1
+    },
+    {
+      "name": "g'ish",
+      "author": "",
+      "lang": "",
+      "categorys": "",
+      "country": "",
+      "desc": "",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/537.jpg",
+      "date": "10/25/2023",
+      "rating": 5,
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "name": "baxtiyor",
+      "surname": "begaliyev",
+      "password": "1748973",
+      "id": 1
+    },
+    {
+      "name": "sfref",
+      "surname": "vdfvre",
+      "password": "freferf",
+      "id": 2
+    }
+  ],
+  "category": []
+}
